@@ -28,7 +28,7 @@ function Products() {
   return (
     <div className='flex flex-col gap-4'>
         <h1 className='text-xl text-bold'>Headphones For You!</h1>
-        <div className='flex gap-3'>
+        <div className='flex flex-col lg:flex-row  gap-3'>
             {data.map((product) => (
             <Product
             key={product.id}
@@ -39,7 +39,7 @@ function Products() {
             />
         ))}
         </div>
-        <div className='flex gap-3'>
+        <div className='flex lg:flex-row gap-3'>
             {data.map((product) => (
             <Product
             key={product.id}
