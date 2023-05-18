@@ -39,7 +39,7 @@ function Products() {
             />
         ))}
         </div>
-        <div className='flex lg:flex-row gap-3'>
+        <div className='flex flex-col lg:flex-row gap-3'>
             {data.map((product) => (
             <Product
             key={product.id}
