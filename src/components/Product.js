@@ -2,7 +2,7 @@ import React from 'react'
 
 function Product({image, rating, productName, description}) {
   return (
-    <div className="max-w-sm rounded overflow-hidden shadow-lg">
+    <div className="max-w-sm rounded overflow shadow-lg">
       <img
         className="w-full"
         src={image}
@@ -23,7 +23,7 @@ function Product({image, rating, productName, description}) {
         </p>
       </div>
       <div className="px-6 py-1 mb-4">
-        <button className="border-2 border-gray-500 hover:bg-green-700 hover:text-white text-black font-bold py-1 px-4 rounded-full">
+        <button className="border-2 border-gray-500 hover:bg-green-500 hover:text-white text-black font-bold py-1 px-4 rounded-full">
           Add to Cart
         </button>
       </div>
