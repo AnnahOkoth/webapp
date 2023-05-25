@@ -9,6 +9,7 @@ import WhatsNew from "./Pages/WhatsNew";
 import Delivery from "./Pages/Delivery";
 import Account from "./Pages/Account";
 import Cart from "./Pages/Cart";
+import Home from "./Pages/Home";
 
 
 ReactDOM.createRoot(document.getElementById("root")).render(
@@ -21,6 +22,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
         <Route path="/Delivery" element={<Delivery />} />
         <Route path="/Account" element={<Account />} />
         <Route path="/Cart" element={<Cart />} /> 
+        <Route path="/Home" element={<Home />} /> 
         <Route path="*" element={<ErrorPage />} />
       </Routes>
     </Router>

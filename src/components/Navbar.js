@@ -54,6 +54,7 @@ const Navbar = () => {
               <FiMenu />
               <span>Menu</span>
             </div>
+            <div className="flex items-center cursor-pointer gap-3 ml-auto">
             <div className="flex items-center cursor-pointer gap-3">
               <FiUser />
               <Link to="/Account">Account</Link>
@@ -61,8 +62,8 @@ const Navbar = () => {
             <div className="flex items-center cursor-pointer gap-3">
               <FiShoppingCart />
               <Link to="/Cart">Cart</Link>
-
             </div>
+          </div>
           </div>
         </div>
         {/* Mobile Menu */}

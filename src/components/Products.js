@@ -2,6 +2,7 @@ import React from 'react'
 import Product from './Product'
 
 function Products() {
+    
     const data=[
         {
             id:1,
