@@ -1,7 +1,56 @@
-import React from 'react';
+import React, {useState} from 'react';
 import { HiAdjustmentsHorizontal } from 'react-icons/hi2';
 
 function Filters() {
+  const [headphoneType, setHeadphoneType] = useState('');
+  const [price, setPrice] = useState('');
+  const [review, setReview] = useState('');
+  const [color, setColor] = useState('');
+  const [material, setMaterial] = useState('');
+  const [offer, setOffer] = useState('');
+
+  const handleHeadphoneTypeChange = (e) => {
+    setHeadphoneType(e.target.value);
+    // Perform filtering based on the selected headphone type
+    // eslint-disable-next-line no-unused-vars
+  };
+
+  const handlePriceChange = (e) => {
+    setPrice(e.target.value);
+    // Perform filtering based on the selected price
+    // eslint-disable-next-line no-unused-vars
+  };
+
+  const handleReviewChange = (e) => {
+    setReview(e.target.value);
+    // Perform filtering based on the selected review
+    // eslint-disable-next-line no-unused-vars
+  };
+
+  const handleColorChange = (e) => {
+    setColor(e.target.value);
+    // Perform filtering based on the selected color
+    // eslint-disable-next-line no-unused-vars
+  };
+
+  const handleMaterialChange = (e) => {
+    setMaterial(e.target.value);
+    // Perform filtering based on the selected material
+    // eslint-disable-next-line no-unused-vars
+  };
+
+  const handleOfferChange = (e) => {
+    setOffer(e.target.value);
+    // Perform filtering based on the selected offer
+    // eslint-disable-next-line no-unused-vars
+  };
+
+  const handleSortByChange = (e) => {
+    const sortBy = e.target.value;
+    // Perform sorting based on the selected option
+    // eslint-disable-next-line no-unused-vars
+  };
+
   return (
     <div className="flex flex-col md:flex-row md:justify-between items-center w-full">
       <div className="flex flex-wrap justify-start gap-3">
