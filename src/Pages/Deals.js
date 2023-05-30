@@ -17,7 +17,7 @@ const Deals = () => {
 
     fetchData();
   }, []);
-  
+
   return (
     <div className="container mx-auto p-4">
       <Navbar />
@@ -27,7 +27,7 @@ const Deals = () => {
         {/* Deal 1 */}
         <div className="border rounded p-4">
           <img
-            src="pink.jpg"
+            src="prod3.jpg"
             alt="Deal 1"
             className="w-full mb-2"
           />
