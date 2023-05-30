@@ -10,6 +10,7 @@ import Delivery from "./Pages/Delivery";
 import Account from "./Pages/Account";
 import Cart from "./Pages/Cart";
 import Home from "./Pages/Home";
+import filters from "./Pages/Fetchdata";
 
 
 ReactDOM.createRoot(document.getElementById("root")).render(
@@ -23,6 +24,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
         <Route path="/Account" element={<Account />} />
         <Route path="/Cart" element={<Cart />} /> 
         <Route path="/Home" element={<Home />} /> 
+        <Route path="/fetchdata" element={<fetchdata />} />
         <Route path="*" element={<ErrorPage />} />
       </Routes>
     </Router>

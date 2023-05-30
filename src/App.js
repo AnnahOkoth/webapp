@@ -4,7 +4,6 @@ import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import Filters from "./components/Filters";
 import Products from "./components/Products";
-import Deals from "./Pages/Deals";
 
 function App() {
   return (
@@ -13,7 +12,6 @@ function App() {
     <Hero />
     <Filters />
     <Products />
-    <Deals />
     </div>
   );
 }
