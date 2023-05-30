@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 
-function Home() {
+function Fetchdata() {
     const [data, setData] = useState([]);
 
     useEffect(() => {
@@ -33,3 +33,4 @@ function Home() {
         </div>
       );
 }
+export default Fetchdata;

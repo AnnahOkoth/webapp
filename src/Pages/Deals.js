@@ -1,7 +1,23 @@
-import React from 'react';
+
+import React, { useEffect, useState } from 'react';
 import Navbar from '../components/Navbar';
 
 const Deals = () => {
+  const [data, setData] = useState([]);
+
+  useEffect(() => {
+    // fetch data
+    const fetchData = async () => {
+      const response = await fetch("https://fakestoreapi.com/products");
+      const data = await response.json();
+      console.log(data);
+      // set state when the data is received
+      setData(data);
+    };
+
+    fetchData();
+  }, []);
+  
   return (
     <div className="container mx-auto p-4">
       <Navbar />
