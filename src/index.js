@@ -11,6 +11,7 @@ import Account from "./Pages/Account";
 import Cart from "./Pages/Cart";
 import Home from "./Pages/Home";
 import filters from "./Pages/Fetchdata";
+import Order from "./Pages/order";
 
 
 ReactDOM.createRoot(document.getElementById("root")).render(
@@ -25,6 +26,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
         <Route path="/Cart" element={<Cart />} /> 
         <Route path="/Home" element={<Home />} /> 
         <Route path="/fetchdata" element={<fetchdata />} />
+        <Route path="/order" element={<Order />} /> 
         <Route path="*" element={<ErrorPage />} />
       </Routes>
     </Router>

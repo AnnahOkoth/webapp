@@ -1,7 +1,18 @@
 import React from 'react';
 import Navbar from '../components/Navbar';
+import {db} from '../firebase';
+import { collection, addDoc } from "firebase/firestore"; 
 
 const Cart = () => {
+  const handleCheckOut=async()=>{
+    const docRef = await addDoc(collection(db, "orders"), {
+      name: "Pietro Maestro",
+      products:cartItems,
+      total:totalPrice,
+      status:'pending'
+    });
+    console.log("Document written with ID: ", docRef.id);
+  }
   const cartItems = [
     {
       id: 1,
@@ -52,7 +63,9 @@ const Cart = () => {
             <p className="text-gray-600 mb-2">
               Total Price: ${totalPrice.toFixed(2)}
             </p>
-            <button className="bg-blue-500 text-white rounded py-2 px-4">
+            <button className="bg-blue-500 text-white rounded py-2 px-4"
+            onClick={handleCheckOut}
+            >
               Checkout
             </button>
           </div>
@@ -60,6 +73,7 @@ const Cart = () => {
       ) : (
         <p>Your cart is empty.</p>
       )}
+      <button onClick={handleCheckOut}>Order</button>
     </div>
   );
 };
